@@ -177,6 +177,10 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav-links:hover, .nav-links:focus {
+  color: var(--accent-color);
+}
+
 .current {
   color: var(--accent-color);
 }
@@ -188,16 +192,6 @@ img {
   color: #188ce8;
 }
 
-.nav-links:hover,
-.nav-links:focus {
-  color: var(--accent-color);
-}
-
-.page-header .contacts-nav-info {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .contacts-nav-info {
   font-weight: 500;
   font-size: 14px;
@@ -207,19 +201,26 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-nav-info:hover,
-.contacts-nav-info:focus {
+.contacts-nav-info:hover, .contacts-nav-info:focus {
   color: var(--accent-color);
 }
 
-.contacts-nav-icon-mail,
-.contacts-nav-icon-tel {
+.page-header .contacts-nav-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-nav-icon-mail {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-nav-info:hover .contacts-nav-icon-mail,
 .contacts-nav-info:focus .contacts-nav-icon-mail {
   fill: var(--accent-color);
+}
+
+.contacts-nav-icon-tel {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-nav-info:hover .contacts-nav-icon-tel,
@@ -558,7 +559,7 @@ img {
 }
 
 .opportunities-title {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
@@ -577,7 +578,7 @@ img {
 
 .section-title,
 .team-title {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   padding-bottom: 50px;
@@ -605,7 +606,7 @@ img {
   width: 100%;
   bottom: 0%;
   position: absolute;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
   text-align: center;
@@ -677,8 +678,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:hover, .social-list-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -700,7 +700,7 @@ img {
 }
 
 .customers-title {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
   text-align: center;
