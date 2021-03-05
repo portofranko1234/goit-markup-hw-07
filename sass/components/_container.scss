@@ -1,57 +1,36 @@
 .container {
-  display: flex;
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-
-  .page-header &,
-  .main-part & {
+  width: 100%;
+  padding: 0 15px;
+  .page-header & {
     display: flex;
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin: 0 auto;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
   }
+}
 
-  .team & {
-    display: flex;
+@media screen and(max-width:479px) {
+  &.customers-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-  }
-
-  .regular-clients & {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .filter-menu & {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-  }
-
-  .footer & {
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .regular-clients & {
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

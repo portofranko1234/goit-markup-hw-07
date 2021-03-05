@@ -4,19 +4,22 @@
 }
 
 .modal-form-action-call {
-  margin-bottom: 12px;
-
-  font-weight: 900;
+  font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--mostly-used-color);
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-action-call {
+    line-height: 1.15;
+  }
 }
 
 .modal-form-input-label {
-  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.166;
@@ -28,7 +31,6 @@
   display: block;
   margin-bottom: 4px;
   margin-top: 10px;
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.166;
@@ -115,8 +117,8 @@
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.166;
   margin: 0 auto;
   letter-spacing: 0.03em;
   color: var(--second-level-color);
@@ -138,6 +140,13 @@
       background-origin: border-box;
       border-color: transparent;
     }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal-form-agreements {
+    width: 320px;
+    flex-wrap: wrap;
   }
 }
 

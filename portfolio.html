@@ -39,6 +39,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="burger-button" data-menu-button>
+          <svg class="burger-icon">
+            <use href="./icons/sprite-svg.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="contacts-nav">
           <li class="contacts-nav-item">
             <a class="contacts-nav-info link" href="mailto:info@devstudio.com">
@@ -58,23 +63,76 @@
           </li>
         </ul>
       </div>
+
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-close-button" data-menu-close>
+          <svg class="close-icon">
+            <use href="./icons/sprite-svg.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-nav">
+          <li class="mobile-menu-nav-item">
+            <a href="./index.html" class="mobile-menu-nav-link link current"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a href="./portfolio.html" class="mobile-menu-nav-link link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a href="#" class="mobile-menu-nav-link link">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-contacts-nav">
+          <li class="mobile-contacts-nav-item">
+            <a href="#" class="mobile-contacts-nav-link link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts-nav-item">
+            <a href="#" class="mobile-contacts-nav-link link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-social-list">
+          <li class="mobile-social-list-item">
+            <a href="#" class="mobile-social-list-link link">Instagram</a>
+          </li>
+          <li class="mobile-social-list-item">
+            <a href="#" class="mobile-social-list-link link">Twitter</a>
+          </li>
+          <li class="mobile-social-list-item">
+            <a href="#" class="mobile-social-list-link link">Facebook</a>
+          </li>
+          <li class="mobile-social-list-item">
+            <a href="#" class="mobile-social-list-link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <h1 class="visually-hidden">filters</h1>
       <section class="filter-menu">
-        <ul class="filter-button-list">
-          <li><button type="button" class="filter-button">Все</button></li>
-          <li>
-            <button type="button" class="filter-button">Веб-сайты</button>
-          </li>
-          <li>
-            <button type="button" class="filter-button">Приложения</button>
-          </li>
-          <li><button type="button" class="filter-button">Дизайн</button></li>
-          <li>
-            <button type="button" class="filter-button">Маркетинг</button>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="filter-button-list">
+            <li><button type="button" class="filter-button">Все</button></li>
+            <li>
+              <button type="button" class="filter-button">Веб-сайты</button>
+            </li>
+            <li>
+              <button type="button" class="filter-button">Приложения</button>
+            </li>
+            <li><button type="button" class="filter-button">Дизайн</button></li>
+            <li>
+              <button type="button" class="filter-button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
         <h2 class="visually-hidden">projects</h2>
 
         <div class="container">
@@ -82,11 +140,52 @@
             <li class="projects-list-item">
               <a class="projects-list-link link" href="#">
                 <div class="img-container">
-                  <img
-                    src="./portfolio.html.img/techno-crack.jpg"
-                    width="368"
-                    alt="list of three persons on the laptop"
-                  />
+                  <picture class="projects-picture">
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/techno-crack.webp.webp    1x,
+                        ./portfolio.html.img.portfolio-desktop/techno-crack@2x.webp.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/techno-crack.jpg    1x,
+                        ./portfolio.html.img/portfolio-desktop/techno-crack@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/techno-crack.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-tablet/techno-crack@2x.webp.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/techno-crack.jpg    1x,
+                        ./portfolio.html.img/portfolio-tablet/techno-crack@2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/techno-crack.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-mobile/techno-crack@2x.webp.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/techno-crack.jpg    1x,
+                        ./portfolio.html.img/portfolio-mobile/techno-crack@2x.jpg 2x
+                      "
+                      media="(min-width:480px)" />
+                    <img
+                      src="./portfolio.html.img/portfolio-mobile/techno-crack.jpg"
+                      alt="list of three persons on the laptop"
+                  /></picture>
                   <p class="overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -102,11 +201,50 @@
             <li class="projects-list-item">
               <a class="projects-list-link link" href="#">
                 <div class="img-container">
-                  <img
-                    src="./portfolio.html.img/poster.jpg"
-                    width="368"
-                    alt="New Orlean vs Golden Star Poster"
-                  />
+                  <picture class="projects-picture">
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop/poster.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-desktop/poster@2x.webp.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-desktop.poster.jpg    1x,
+                        ./portfolio.html.img/portfolio-desktop/poster@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/poster.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-tablet/poster@2x.webp.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-tablet/poster.jpg    1x,
+                        ./portfolio.html.img/portfolio-tablet/poster@2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/poster.webp.webp    1x,
+                        ./portfolio.html.img/portfolio-mobile/poster@2x.webp.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./portfolio.html.img/portfolio-mobile/poster.jpg    1x,
+                        ./portfolio.html.img/portfolio-mobile/poster@2x.jpg 2x
+                      "
+                      media="(min-width:480px)" />
+                    <img
+                      src="./portfolio.html.img/portfolio-mobile/poster.jpg"
+                      alt="New Orlean vs Golden Star Poster"
+                  /></picture>
                   <p class="overlay">
                     Не волнуйтесь, если что-то не работает. Если бы всё
                     работало, вас бы уволили.
@@ -124,8 +262,7 @@
               <a class="projects-list-link link" href="#">
                 <div class="img-container">
                   <img
-                    src="./portfolio.html.img/seafood.jpg"
-                    width="368"
+                    src="./portfolio.html.img/portfolio-mobile/seafood.jpg"
                     alt="the seafood restaurant logo"
                   />
                   <p class="overlay">
@@ -143,8 +280,7 @@
               <a class="projects-list-link link" href="#">
                 <div class="img-container">
                   <img
-                    src="./portfolio.html.img/headphones.jpg"
-                    width="368"
+                    src="./portfolio.html.img/portfolio-mobile/headphones.jpg"
                     alt="headphones "
                   />
                   <p class="overlay">
@@ -162,8 +298,7 @@
               <a class="projects-list-link link" href="#">
                 <div class="img-container">
                   <img
-                    src="./portfolio.html.img/boxes.jpg"
-                    width="368"
+                    src="./portfolio.html.img/portfolio-mobile/boxes.jpg"
                     alt="brown and white boxes"
                   />
                   <p class="overlay">
@@ -180,8 +315,7 @@
               <a class="projects-list-link link" href="#">
                 <div class="img-container">
                   <img
-                    src="./portfolio.html.img/monitor.jpg"
-                    width="368"
+                    src="./portfolio.html.img/portfolio-mobile/monitor.jpg"
                     alt="monitor with information on it "
                   />
                   <p class="overlay">
@@ -199,8 +333,7 @@
               <a class="projects-list-link link" href="#">
                 <div class="img-container">
                   <img
-                    src="./portfolio.html.img/limited-edition.jpg"
-                    width="368"
+                    src="./portfolio.html.img/portfolio-mobile/limited-edition.jpg"
                     alt="a book "
                   />
                   <p class="overlay">
@@ -220,8 +353,7 @@
               <a class="projects-list-link link" href="#">
                 <div class="img-container">
                   <img
-                    src="./portfolio.html.img/lab.jpg"
-                    width="368"
+                    src="./portfolio.html.img/portfolio-mobile/lab.jpg"
                     alt="labeltag"
                   />
                   <p class="overlay">
@@ -240,8 +372,7 @@
               <a class="projects-list-link link" href="#">
                 <div class="img-container">
                   <img
-                    src="./portfolio.html.img/growing-buisiness.jpg"
-                    width="368"
+                    src="./portfolio.html.img/portfolio-mobile/growing-business.jpg"
                     alt="a person works on laptop "
                   />
                   <p class="overlay">
@@ -339,5 +470,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
