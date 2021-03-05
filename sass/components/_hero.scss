@@ -22,7 +22,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../bg-pic/bg-picture-mobile.jpg);
+    url(./bg-pic/bg-picture-mobile.jpg);
   background-color: #2f303a;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../bg-pic/bg-picture-mobile@2x.jpg);
+      url(./bg-pic/bg-picture-mobile@2x.jpg);
   }
 }
 
@@ -66,7 +66,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../bg-pic/bg-picture-tablet.jpg);
+      url(./bg-pic/bg-picture-tablet.jpg);
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -76,7 +76,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../bg-pic/bg-picture-tablet@2x.jpg);
+        url(./bg-pic/bg-picture-tablet@2x.jpg);
     }
   }
 }
@@ -93,7 +93,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../bg-pic/bg-picture-desktop.jpg);
+      url(./bg-pic/bg-picture-desktop.jpg);
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -103,7 +103,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../bg-pic/bg-picture-desktop@2x.jpg);
+        url(./bg-pic/bg-picture-desktop@2x.jpg);
     }
   }
 }
